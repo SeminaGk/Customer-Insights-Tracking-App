@@ -1,7 +1,8 @@
 # Customer Insights Tracker
 
 A simple web application for tracking and analyzing customer interactions to improve customer experience across teams.
-# Link to the App: https://seminagk.github.io/Customer-Insights-Tracking-App/
+
+## Link to the App: https://seminagk.github.io/Customer-Insights-Tracking-App/
 
 ## 🎯 Problem Statement
 
@@ -43,11 +44,6 @@ This application provides a simple interface to:
 - Simple styling with intuitive colors
 - Priority color coding (Red=High, Yellow=Medium, Green=Low)
 - Recent cases tracking
-
-**Open the application**
-
-- Simply double-click `index.html`
-- Or open `index.html` in your web browser
 
 ### Usage
 
