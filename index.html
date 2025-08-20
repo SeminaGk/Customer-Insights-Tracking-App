@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Insights Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Insights Tracker</h1>
+        
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Log Customer Interaction</h2>
+            <form id="insightForm">
+                <div class="form-group">
+                    <label for="customerName">Customer Name/ID:</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interactionType">Interaction Type:</label>
+                    <select id="interactionType" required>
+                        <option value="">Select type...</option>
+                        <option value="email">Email</option>
+                        <option value="chat">Live Chat</option>
+                        <option value="phone">Phone Call</option>
+                        <option value="ticket">Support Ticket</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Issue Description:</label>
+                    <textarea id="description" placeholder="Describe the customer's issue or feedback..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Issue Category (Select all that apply):</label>
+                    <div class="tags-container" id="tagsContainer">
+                        <div class="tag" data-tag="billing">Billing Issues</div>
+                        <div class="tag" data-tag="technical">Technical Problems</div>
+                        <div class="tag" data-tag="account">Account Access</div>
+                        <div class="tag" data-tag="feature">Feature Request</div>
+                        <div class="tag" data-tag="ui">User Interface</div>
+                        <div class="tag" data-tag="performance">Performance</div>
+                        <div class="tag" data-tag="integration">Integration</div>
+                        <div class="tag" data-tag="documentation">Documentation</div>
+                        <div class="tag" data-tag="training">Training/Support</div>
+                        <div class="tag" data-tag="other">Other</div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn">Log Interaction</button>
+            </form>
+        </div>
+        
+        <!-- Insights Section -->
+        <div class="insights-section">
+            <h2>Customer Insights Dashboard</h2>
+            
+            <!-- Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalCases">0</div>
+                    <div class="stat-label">Total Cases</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="thisWeek">0</div>
+                    <div class="stat-label">This Week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="avgResolution">N/A</div>
+                    <div class="stat-label">Top Issue</div>
+                </div>
+            </div>
+            
+            <!-- Issue Priority List -->
+            <h3>Issue Priority (Based on Frequency)</h3>
+            <div class="issue-list" id="issueList">
+                <div class="issue-item">
+                    <span>No data yet - Start logging customer interactions!</span>
+                </div>
+            </div>
+            
+            <!-- Recent Cases -->
+            <h3>Recent Cases</h3>
+            <div class="recent-cases" id="recentCases">
+                <div class="case-item">No recent cases</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
