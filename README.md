@@ -1,6 +1,7 @@
 # Customer Insights Tracker
 
 A simple web application for tracking and analyzing customer interactions to improve customer experience across teams.
+# Link to the App: https://seminagk.github.io/Customer-Insights-Tracking-App/
 
 ## 🎯 Problem Statement
 
